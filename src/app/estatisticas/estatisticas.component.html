@@ -1,0 +1,28 @@
+<div class="main">
+  <section class="menu">
+    <nav>
+      <a [routerLink]="['/home']">Página inicial</a>
+      <a [routerLink]="['/consulta']">Consulta individual</a>
+      <a [routerLink]="['/estatisticas']">Estatísticas</a>
+    </nav>
+  </section>
+
+  <section style="margin-left: 12%; clear: both;">
+    <h4 class="text-center pt-2 pb-2">Estatísticas de Evasão - Naturalidade</h4>
+
+    <div style="width: 80%;">
+      <div class="text-center ml-5" style="display: block">
+        <canvas baseChart [datasets]="barChartData" [colors]="barChartColors" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+          [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section style="clear: both; margin-top: 70px;">
+    <div class="rodape">
+      <span><img src="../../assets/logo-5hacks.png" alt="5Hacks" width="80"></span>
+      <span><img src="../../assets/logo-unicef.png" alt="unicef" width="80"></span>
+      <span><img src="../../assets/logo-campus.png" alt="Campus Party 12" width="80"></span>
+    </div>
+  </section>
+</div>

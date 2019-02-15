@@ -5,7 +5,7 @@
       <nav>
         <a [routerLink]="['/home']">Página inicial</a>
         <a [routerLink]="['/consulta']">Consulta individual</a>
-        <a href="#">Estatísticas</a>
+        <a [routerLink]="['/estatisticas']">Estatísticas</a>
       </nav>
     </section>
 
@@ -16,14 +16,40 @@
         <span>Nos ajude a combater!</span> <br>
       </p>
     </section>
+
+    <div class="transparente">
+      <div class="row">
+        <div style="padding-left: 100px;" class="col">
+          <h3 class="titulo">Consulta Individual</h3>
+          <p>
+            Utilize nossa inteligência artificial para<br>
+            analisar a probabilidade de evasão de<br>
+            um aluno. <br>
+            <button [routerLink]="['/consulta']" class="btn_consultar">Consultar</button>
+          </p>
+
+
+        </div>
+        <div style="padding-left: 100px;" class="col">
+
+          <h3 class="titulo">Estatísticas</h3>
+          <p>
+            Verifique as taxas de evasão por<br>
+            estados e municípios. <br>
+            <button [routerLink]="['/estatisticas']" class="btn_ver">Ver</button>
+          </p>
+
+
+        </div>
+      </div>
+    </div>
   </div>
 
-
   <section class="cadastro">
-    <h3>Cadastro de Alunos</h3>
+    <h3 class="titulo">Cadastro de Alunos</h3>
     <p>
       Escolas podem nos ajudar cadastrando seus alunos, aumentando com isso a
-      eficiência da ferramenta. <br> <br>
+      eficiência da ferramenta. <br>
       Solicite já seu código de acesso!
     </p>
 

@@ -6,7 +6,6 @@
    background-size: cover;
    background-repeat: no-repeat center;
    background-position: center;
-   height: 480px;
    /* width: 1360px; */
 }
 /* ############ */
@@ -22,6 +21,7 @@ nav a {
     padding-left: 16px;
     font-style: italic;
     font-size: 15pt;
+    font-family: 'Roboto Light';
 }
 
 nav a:hover{
@@ -42,6 +42,29 @@ nav a:hover{
     padding-top: 5px;
 }
 
+.transparente {
+    background: rgba(255, 255, 255, 0.2);
+    width: 80%;
+    margin-left: 10%;
+    /* margin-right: 10%; */
+    display: inline-block;
+    margin-bottom: 70px;
+}
+
+.transparente p, h3 {
+    padding: 15px;
+    color: white;
+}
+
+.transparente p {
+    font-size: 1.2em;
+    width: 100%;
+}
+
+#titulo {
+    font-weight: 600;
+}
+
 /* ############### */
 /* ### CADSTRO ### */
 /* ############### */
@@ -58,14 +81,19 @@ nav a:hover{
     text-align: justify
 }
 
-.btn_cadastrar { 
+.btn_cadastrar, .btn_consultar, .btn_ver { 
     background: transparent;
     border: 1px solid white;
     color: white;
     font-size: 13pt;
     padding: 2px;
     margin-top: 10px;
+    text-align: center
 }
+
+.btn_ver {width: 100px}
+
+
 
 /* ############## */
 /* ### FOOTER ### */
@@ -73,9 +101,9 @@ nav a:hover{
 .rodape { 
     background: #4e688e;
     width: 100%;
-    height: 40px;
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .rodape span {padding-left: 3%; color: white}

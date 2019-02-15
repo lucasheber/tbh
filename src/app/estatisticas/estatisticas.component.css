@@ -15,24 +15,11 @@ nav a {
     padding-left: 16px;
     font-style: italic;
     font-size: 15pt;
-    font-family: 'Roboto Light';
+    font-family: 'Roboto Light'
 }
 
-nav a:hover{
-    text-decoration: underline;
-}
-
-/* ################ */
-/* ### CONSULTA ### */
-/* ################ */
-.form {
-    padding: 2%;
-    margin-left:20%;
-}
-
-.dados {
-    margin-top: 30px;
-    height: 400px;
+.grafico {
+    height: 450px;;
 }
 
 /* ############## */
@@ -42,9 +29,9 @@ nav a:hover{
     clear: both;
     background: #4e688e;
     width: 100%;
-    height: 40px;
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.rodape span {padding-left: 2%; color: white}
+.rodape span {padding-left: 2%; color: white; padding-bottom: 10px;}
