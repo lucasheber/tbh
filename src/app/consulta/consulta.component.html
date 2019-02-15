@@ -1,0 +1,67 @@
+<div class="main">
+  <section class="menu">
+    <nav>
+      <a [routerLink]="['/home']">Página inicial</a>
+      <a [routerLink]="['/consulta']">Consulta individual</a>
+      <a href="#">Estatísticas</a>
+    </nav>
+  </section>
+</div>
+
+<div style="clear: both"></div>
+
+<div class="form">
+  <h3>Consulta individual</h3> <br>
+
+  <label for="codigo">Código do aluno:
+    <input class="form-control" name="codigo" type="number" [(ngModel)]="codigo">
+  </label>
+
+  <button class="btn-primary ml-4" ngbButtonLabel (click)="buscaAlunoByCodigo()">Buscar</button>
+
+  <div *ngIf="message != ''" class="alert alert-danger w-50 mt-5" role="alert">
+    {{message}}
+  </div>
+
+  <div class="dados">
+    <table class="table table-striped text-left w-50" [hidden]="hidden">
+      <tr>
+        <td>Sexo</td>
+        <td> {{sexo}} </td>
+      </tr>
+      <tr>
+        <td>Estado</td>
+        <td> {{estado}} </td>
+      </tr>
+      <tr>
+        <td>Cidade</td>
+        <td> {{cidade}} </td>
+      </tr>
+      <tr>
+        <td>Bairro</td>
+        <td> {{bairro}} </td>
+      </tr>
+      <tr>
+        <td>Raça</td>
+        <td> {{raca}} </td>
+      </tr>
+      <tr>
+        <td>Probabilidade de Evasão</td>
+        <td>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" [style.width.%]="proba" aria-valuenow="proba" aria-valuemin="0"
+              aria-valuemax="100">{{proba}}%</div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div>
+  <section class="rodape">
+    <span><img src="../../assets/logo-5hacks.png" alt="5Hacks" width="80"></span>
+    <span><img src="../../assets/logo-unicef.png" alt="unicef" width="80"></span>
+    <span><img src="../../assets/logo-campus.png" alt="Campus Party 12" width="80"></span>
+  </section>
+</div>

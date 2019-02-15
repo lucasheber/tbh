@@ -1,0 +1,90 @@
+/* RESET */
+*, body {font-family: 'Roboto'; margin: 0; padding: 0%;}
+
+.image {
+   background-image: url('../../assets/background.jpg');
+   background-size: cover;
+   background-repeat: no-repeat center;
+   background-position: center;
+   height: 480px;
+   /* width: 1360px; */
+}
+/* ############ */
+/* ### MENU ### */
+/* ############ */
+
+.menu {color: white; float: right; padding: 3% 4%}
+
+nav a { 
+    text-decoration: none;
+    color: white;
+    float: left;
+    padding-left: 16px;
+    font-style: italic;
+    font-size: 15pt;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* ############ */
+/* ### INFO ### */
+/* ############ */
+.info {
+    font-size: 26pt;
+    color: white;
+}
+
+.info p {padding: 10%;}
+
+.info i, b, span {
+    padding-top: 5px;
+}
+
+/* ############### */
+/* ### CADSTRO ### */
+/* ############### */
+.cadastro {
+    clear: both;
+    background-color: #c97941;
+    padding: 2% 10% 2% 15%;
+    color: white
+}
+.cadastro p {
+    padding-top: 1%;
+    width: 70%;
+    font-size: 14pt;
+    text-align: justify
+}
+
+.btn_cadastrar { 
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 13pt;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+/* ############## */
+/* ### FOOTER ### */
+/* ############## */
+.rodape { 
+    background: #4e688e;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.rodape span {padding-left: 3%; color: white}
+
+
+@media only screen and (max-width: 600px) {
+    .cadastro p {width: 100%}
+}
+
+@media only screen and (max-width: 900px) {
+    .cadastro p {width: 80%}
+}
