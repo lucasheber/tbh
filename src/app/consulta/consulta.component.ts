@@ -21,7 +21,7 @@ export class ConsultaComponent implements OnInit {
   public sexo = ''
   public hidden: boolean = true;
 
-  private servidor: string = 'http://192.168.1.36:5000';
+  private servidor: string = 'http://127.0.0.1:5000';
 
   constructor(public http: HttpClient) { }
 

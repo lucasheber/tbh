@@ -10,7 +10,7 @@ import { Config } from 'protractor';
 export class EstatisticasComponent implements OnInit {
 
   constructor(public http: HttpClient) { }
-  private servidor: string = 'http://192.168.1.36:5000';
+  private servidor: string = 'http://127.0.0.1:5000';
 
   ngOnInit() {
     this.estatisticas();
